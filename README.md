@@ -1,3 +1,9 @@
+<h1 align="center">xcodewwdc-mustang</h1>
+
+xcodewwdc is simplified and colors are modified to resemble mustang color scheme ( 
+![](https://github.com/croaker/mustang-vim.git)
+)
+
 <h1 align="center">vim-colors-xcode</h1>
 
 <h3 align="center">A number of Xcode 11’s colourschemes, now for Vim!</h3>
