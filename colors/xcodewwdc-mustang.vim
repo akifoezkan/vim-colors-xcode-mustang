@@ -15,26 +15,26 @@ let g:colors_name = 'xcodewwdc'
 let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-  let g:terminal_ansi_colors = ['#494d5c', '#bb383a', '#94c66e', '#d28e5d',
-        \ '#8884c5', '#b73999', '#00aba4', '#e7e8eb', '#7f869e', '#bb383a',
-        \ '#94c66e', '#d28e5d', '#8884c5', '#b73999', '#00aba4', '#e7e8eb']
+  let g:terminal_ansi_colors = ['#414453', '#ff8170', '#78c2b3', '#d9c97c',
+        \ '#4eb0cc', '#ff7ab2', '#b281eb', '#dfdfe0', '#7f8c98', '#ff8170',
+        \ '#acf2e4', '#ffa14f', '#6bdfff', '#ff7ab2', '#dabaff', '#dfdfe0']
   if has('nvim')
-    let g:terminal_color_0 = '#494d5c'
-    let g:terminal_color_1 = '#bb383a'
-    let g:terminal_color_2 = '#94c66e'
-    let g:terminal_color_3 = '#d28e5d'
-    let g:terminal_color_4 = '#8884c5'
-    let g:terminal_color_5 = '#b73999'
-    let g:terminal_color_6 = '#00aba4'
-    let g:terminal_color_7 = '#e7e8eb'
-    let g:terminal_color_8 = '#7f869e'
-    let g:terminal_color_9 = '#bb383a'
-    let g:terminal_color_10 = '#94c66e'
-    let g:terminal_color_11 = '#d28e5d'
-    let g:terminal_color_12 = '#8884c5'
-    let g:terminal_color_13 = '#b73999'
-    let g:terminal_color_14 = '#00aba4'
-    let g:terminal_color_15 = '#e7e8eb'
+    let g:terminal_color_0 = '#414453'
+    let g:terminal_color_1 = '#ff8170'
+    let g:terminal_color_2 = '#78c2b3'
+    let g:terminal_color_3 = '#d9c97c'
+    let g:terminal_color_4 = '#4eb0cc'
+    let g:terminal_color_5 = '#ff7ab2'
+    let g:terminal_color_6 = '#b281eb'
+    let g:terminal_color_7 = '#dfdfe0'
+    let g:terminal_color_8 = '#7f8c98'
+    let g:terminal_color_9 = '#ff8170'
+    let g:terminal_color_10 = '#acf2e4'
+    let g:terminal_color_11 = '#ffa14f'
+    let g:terminal_color_12 = '#6bdfff'
+    let g:terminal_color_13 = '#ff7ab2'
+    let g:terminal_color_14 = '#dabaff'
+    let g:terminal_color_15 = '#dfdfe0'
   endif
   if !exists('g:xcodewwdc_green_comments')
     let g:xcodewwdc_green_comments = 0
@@ -73,8 +73,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi PmenuThumb guifg=#494d5c guibg=#494d5c gui=NONE cterm=NONE
   hi ErrorMsg guifg=#bb383a guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=#7f869e guibg=NONE gui=NONE cterm=NONE
-  hi MoreMsg guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
-  hi Question guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+  hi MoreMsg guifg=#7e8aa2 guibg=NONE gui=NONE cterm=NONE
+  hi Question guifg=#7e8aa2 guibg=NONE gui=NONE cterm=NONE
   hi WarningMsg guifg=#d28e5d guibg=NONE gui=bold cterm=bold
   hi ColorColumn guifg=NONE guibg=#2f323d gui=NONE cterm=NONE
   hi CursorColumn guifg=NONE guibg=#2f323d gui=NONE cterm=NONE
@@ -92,18 +92,18 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi DiffDelete guifg=#bb383a guibg=#3d2c2c gui=NONE cterm=NONE
   hi DiffText guifg=#d28e5d guibg=#3a2e27 gui=NONE cterm=NONE
   hi Comment guifg=#7f869e guibg=NONE gui=NONE cterm=NONE
-  hi Error guifg=#292c36 guibg=#bb383a gui=NONE cterm=NONE
-  hi PreProc guifg=#d28e5d guibg=NONE gui=NONE cterm=NONE
-  hi Special guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#F44747 guibg=#1E1E1E gui=NONE cterm=NONE
+  hi PreProc guifg=#faf4c6 guibg=NONE gui=NONE cterm=NONE
+  hi Special guifg=#d28e5d guibg=NONE gui=NONE cterm=NONE
   hi Statement guifg=#b73999 guibg=NONE gui=NONE cterm=NONE
   hi Character guifg=#d28e5d guibg=NONE gui=NONE cterm=NONE
-  hi Directory guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+  hi Directory guifg=#a5aebe guibg=NONE gui=NONE cterm=NONE
   hi Number guifg=#d28e5d guibg=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#b3b6c0 guibg=NONE gui=NONE cterm=NONE
   hi String guifg=#bb383a guibg=NONE gui=NONE cterm=NONE
   hi Title guifg=#e7e8eb guibg=NONE gui=bold cterm=bold
   hi Todo guifg=#b3b6c0 guibg=NONE gui=bold cterm=bold
-  hi Underlined guifg=#00aba4 guibg=NONE gui=underline cterm=underline
+  hi Underlined guifg=#7e8aa2 guibg=NONE gui=underline cterm=underline
   hi SpellBad guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellLocal guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -320,7 +320,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi! link markdownRule markdownDelimiter
   hi! link markdownUrl Underlined
   hi markdownDelimiter guifg=#68878f guibg=NONE gui=NONE cterm=NONE
-  hi markdownCode guifg=#00aba4 guibg=#383b45 gui=NONE cterm=NONE
+  hi markdownCode guifg=#7e8aa2 guibg=#383b45 gui=NONE cterm=NONE
   if g:xcodewwdc_green_comments
     hi Comment guifg=#23ad68 guibg=NONE gui=NONE cterm=NONE
     hi SpecialComment guifg=#35d585 guibg=NONE gui=NONE cterm=NONE
@@ -333,16 +333,16 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   else
     hi Typedef guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
     hi LocalType guifg=#94c66e guibg=NONE gui=NONE cterm=NONE
-    hi LibraryType guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+    hi LibraryType guifg=#7e8aa2 guibg=NONE gui=NONE cterm=NONE
   endif
   if g:xcodewwdc_emph_funcs
-    hi FunctionDef guifg=#b9b5f6 guibg=NONE gui=NONE cterm=NONE
-    hi LocalFunc guifg=#c7faa4 guibg=NONE gui=NONE cterm=NONE
-    hi LibraryFunc guifg=#64dcd4 guibg=NONE gui=NONE cterm=NONE
+    hi FunctionDef guifg=#ffffff guibg=NONE gui=italic cterm=NONE
+    hi LocalFunc   guifg=#ffffff guibg=NONE gui=italic cterm=NONE
+    hi LibraryFunc guifg=#ffffff guibg=NONE gui=italic cterm=NONE
   else
     hi FunctionDef guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
     hi LocalFunc guifg=#94c66e guibg=NONE gui=NONE cterm=NONE
-    hi LibraryFunc guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+    hi LibraryFunc guifg=#7e8aa2 guibg=NONE gui=NONE cterm=NONE
   endif
   if g:xcodewwdc_emph_idents
     hi IdentifierDef guifg=#b9b5f6 guibg=NONE gui=NONE cterm=NONE
@@ -351,7 +351,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   else
     hi IdentifierDef guifg=#8884c5 guibg=NONE gui=NONE cterm=NONE
     hi LocalIdent guifg=#94c66e guibg=NONE gui=NONE cterm=NONE
-    hi LibraryIdent guifg=#00aba4 guibg=NONE gui=NONE cterm=NONE
+    hi LibraryIdent guifg=#7e8aa2 guibg=NONE gui=NONE cterm=NONE
   endif
   if g:xcodewwdc_match_paren_style
     hi MatchParen guifg=#292c36 guibg=#fef937 gui=NONE cterm=NONE
@@ -388,7 +388,7 @@ if s:t_Co >= 256
   if !exists('g:xcodewwdc_dim_punctuation')
     let g:xcodewwdc_dim_punctuation = 1
   endif
-  hi Normal ctermfg=254 ctermbg=236 cterm=NONE
+  hi Normal ctermfg=253 ctermbg=234 cterm=NONE
   if !has('patch-8.0.0616') && !has('nvim') " Fix for Vim bug
     set background=dark
   endif
@@ -410,8 +410,8 @@ if s:t_Co >= 256
   hi PmenuThumb ctermfg=239 ctermbg=239 cterm=NONE
   hi ErrorMsg ctermfg=131 ctermbg=NONE cterm=bold
   hi ModeMsg ctermfg=103 ctermbg=NONE cterm=NONE
-  hi MoreMsg ctermfg=37 ctermbg=NONE cterm=NONE
-  hi Question ctermfg=37 ctermbg=NONE cterm=NONE
+  hi MoreMsg ctermfg=103 ctermbg=NONE cterm=NONE
+  hi Question ctermfg=103 ctermbg=NONE cterm=NONE
   hi WarningMsg ctermfg=173 ctermbg=NONE cterm=bold
   hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE
   hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE
@@ -428,19 +428,21 @@ if s:t_Co >= 256
   hi DiffChange ctermfg=173 ctermbg=NONE cterm=NONE
   hi DiffDelete ctermfg=131 ctermbg=236 cterm=NONE
   hi DiffText ctermfg=173 ctermbg=236 cterm=NONE
-  hi Comment ctermfg=103 ctermbg=NONE cterm=NONE
-  hi Error ctermfg=236 ctermbg=131 cterm=NONE
-  hi PreProc ctermfg=173 ctermbg=NONE cterm=NONE
-  hi Special ctermfg=104 ctermbg=NONE cterm=NONE
+  hi Comment ctermfg=244 ctermbg=NONE cterm=NONE
+  hi Error ctermfg=203 ctermbg=00 cterm=NONE
+  "hi Error ctermfg=173 ctermbg=131 cterm=NONE
+  hi PreProc ctermfg=230 ctermbg=NONE cterm=NONE
+  hi Special ctermfg=173 ctermbg=NONE cterm=NONE
   hi Statement ctermfg=163 ctermbg=NONE cterm=NONE
   hi Character ctermfg=173 ctermbg=NONE cterm=NONE
-  hi Directory ctermfg=37 ctermbg=NONE cterm=NONE
+  hi Directory ctermfg=103 ctermbg=NONE cterm=NONE
   hi Number ctermfg=173 ctermbg=NONE cterm=NONE
-  hi SpecialComment ctermfg=249 ctermbg=NONE cterm=NONE
-  hi String ctermfg=131 ctermbg=NONE cterm=NONE
+  hi SpecialComment ctermfg=207 ctermbg=NONE cterm=NONE
+  "hi String ctermfg=148 ctermbg=NONE cterm=NONE
+  hi String ctermfg=114 ctermbg=NONE cterm=NONE
   hi Title ctermfg=254 ctermbg=NONE cterm=bold
   hi Todo ctermfg=249 ctermbg=NONE cterm=bold
-  hi Underlined ctermfg=37 ctermbg=NONE cterm=underline
+  hi Underlined ctermfg=103 ctermbg=NONE cterm=underline
   hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -477,7 +479,7 @@ if s:t_Co >= 256
   hi! link Boolean Statement
   hi! link Conditional Statement
   hi! link Exception Statement
-  hi! link Include Statement
+  hi! link Include PreProc
   hi! link Keyword Statement
   hi! link Label Statement
   hi! link Repeat Statement
@@ -657,7 +659,7 @@ if s:t_Co >= 256
   hi! link markdownRule markdownDelimiter
   hi! link markdownUrl Underlined
   hi markdownDelimiter ctermfg=66 ctermbg=NONE cterm=NONE
-  hi markdownCode ctermfg=37 ctermbg=237 cterm=NONE
+  hi markdownCode ctermfg=103 ctermbg=237 cterm=NONE
   if g:xcodewwdc_green_comments
     hi Comment ctermfg=35 ctermbg=NONE cterm=NONE
     hi SpecialComment ctermfg=42 ctermbg=NONE cterm=NONE
@@ -670,25 +672,31 @@ if s:t_Co >= 256
   else
     hi Typedef ctermfg=104 ctermbg=NONE cterm=NONE
     hi LocalType ctermfg=150 ctermbg=NONE cterm=NONE
-    hi LibraryType ctermfg=37 ctermbg=NONE cterm=NONE
+    hi LibraryType ctermfg=103 ctermbg=NONE cterm=NONE
   endif
   if g:xcodewwdc_emph_funcs
-    hi FunctionDef ctermfg=147 ctermbg=NONE cterm=NONE
-    hi LocalFunc ctermfg=193 ctermbg=NONE cterm=NONE
-    hi LibraryFunc ctermfg=80 ctermbg=NONE cterm=NONE
+    "hi FunctionDef ctermfg=147 ctermbg=NONE cterm=NONE
+    "hi LocalFunc   ctermfg=193 ctermbg=NONE cterm=NONE
+    "hi LibraryFunc ctermfg=80  ctermbg=NONE cterm=NONE
+    hi FunctionDef ctermfg=255 ctermbg=NONE cterm=italic
+    hi LocalFunc   ctermfg=255 ctermbg=NONE cterm=italic
+    hi LibraryFunc ctermfg=255 ctermbg=NONE cterm=italic
   else
     hi FunctionDef ctermfg=104 ctermbg=NONE cterm=NONE
-    hi LocalFunc ctermfg=150 ctermbg=NONE cterm=NONE
-    hi LibraryFunc ctermfg=37 ctermbg=NONE cterm=NONE
+    hi LocalFunc   ctermfg=150 ctermbg=NONE cterm=NONE
+    hi LibraryFunc ctermfg=103 ctermbg=NONE cterm=NONE
   endif
   if g:xcodewwdc_emph_idents
     hi IdentifierDef ctermfg=147 ctermbg=NONE cterm=NONE
     hi LocalIdent ctermfg=193 ctermbg=NONE cterm=NONE
     hi LibraryIdent ctermfg=80 ctermbg=NONE cterm=NONE
   else
-    hi IdentifierDef ctermfg=104 ctermbg=NONE cterm=NONE
-    hi LocalIdent ctermfg=150 ctermbg=NONE cterm=NONE
-    hi LibraryIdent ctermfg=37 ctermbg=NONE cterm=NONE
+    "hi IdentifierDef ctermfg=104 ctermbg=NONE cterm=NONE
+    "hi LocalIdent ctermfg=150 ctermbg=NONE cterm=NONE
+    "hi LibraryIdent ctermfg=103 ctermbg=NONE cterm=NONE
+    hi IdentifierDef ctermfg=103 ctermbg=NONE cterm=NONE
+    hi LocalIdent    ctermfg=103 ctermbg=NONE cterm=NONE
+    hi LibraryIdent  ctermfg=103 ctermbg=NONE cterm=NONE
   endif
   if g:xcodewwdc_match_paren_style
     hi MatchParen ctermfg=236 ctermbg=226 cterm=NONE
@@ -706,35 +714,35 @@ if s:t_Co >= 256
   finish
 endif
 
-" Background: dark
-" Color: base0        #292c36 ~
-" Color: base1        #2f323d ~
-" Color: base2        #383b45 ~
-" Color: base3        #494d5c ~
-" Color: base4        #595e6d ~
-" Color: base5        #7f869e ~
-" Color: base6        #b3b6c0 ~
-" Color: base7        #e7e8eb ~
+" Color: base0        #292a30 ~
+" Color: base1        #2f3037 ~
+" Color: base2        #393b44 ~
+" Color: base3        #414453 ~
+" Color: base4        #53606e ~
+" Color: base5        #7f8c98 ~
+" Color: base6        #a3b1bf ~
+" Color: base7        #dfdfe0 ~
 " Color: deep_blue0   #0f5bca ~
 " Color: deep_blue1   #4484d1 ~
 " Color: deep_yellow  #fef937 ~
-" Color: green_wash   #233429 ~
-" Color: orange_wash  #3a2e27 ~
-" Color: red_wash     #3d2c2c ~
-" Color: cyan         #00aba4 ~
-" Color: green        #94c66e ~
-" Color: indigo       #8884c5 ~
-" Color: orange       #d28e5d ~
-" Color: purple       #b73999 ~
-" Color: red          #bb383a ~
-" Color: slate        #68878f ~
-" Color: light_indigo #b9b5f6 ~
-" Color: light_green  #c7faa4 ~
-" Color: light_cyan   #64dcd4 ~
-" Color: deep_green   #23ad68 ~
-" Color: strong_green #35d585 ~
-" Term colors: base3  red    green orange
-" Term colors: indigo purple cyan  base7
-" Term colors: base5  red    green orange
-" Term colors: indigo purple cyan  base7
+" Color: green_wash   #243330 ~
+" Color: orange_wash  #382e27 ~
+" Color: red_wash     #3b2d2b ~
+" Color: blue         #4eb0cc ~
+" Color: light_blue   #6bdfff ~
+" Color: orange       #ffa14f ~
+" Color: pink         #ff7ab2 ~
+" Color: red          #ff8170 ~
+" Color: yellow       #d9c97c ~
+" Color: purple       #b281eb ~
+" Color: light_purple #dabaff ~
+" Color: teal         #78c2b3 ~
+" Color: light_teal   #acf2e4 ~
+" Color: green        #84b360 ~
+" Color: light_green  #b0e687 ~
+" Background: dark
+" Term colors: base3      red  teal         yellow
+" Term colors: blue       pink purple       base7
+" Term colors: base5      red  light_teal   orange
+" Term colors: light_blue pink light_purple base7
 " vim: et ts=2 sw=2
